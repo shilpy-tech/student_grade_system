@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+<title>student grade system</title>
+<link rel="stylesheet" href="style2.css">
+
+
+</head>
+
+<body>
+    <div id="container">
+        <form>
+        <h3>Student Grade System</h3>
+        <div class="box1">
+        <input class="box" id="phy" type="text" placeholder="Physics"><br><br>
+        <input class="box" id="chem" type="text" placeholder="Chemistry"><br><br>
+        <input class="box" id="hin" type="text" placeholder="Hindi"><br><br>
+        <input class="box" id="eng" type="text" placeholder="English"><br><br>
+        
+        <input class="press" type="button" id="showbtn" onclick="calcy()" value="Show Result"></div>
+        <div><p id="showmsg"></p></div>
+        </form>
+        </div>
+        
+        <script>
+           const calcy = () => {
+            let phy=document.getElementById('phy').value;
+            let chem=document.getElementById('chem').value;
+            let hin=document.getElementById('hin').value;
+            let eng=document.getElementById('eng').value;
+            let grade="";
+            let totalgrade=parseFloat(phy)+parseFloat(chem)+parseFloat(hin)+parseFloat(eng);
+            alert(totalgrade);
+            let Percent=(totalgrade/400)*100;
+            alert(Percent);
+            if(Percent<=100 && Percent>=80){
+                grade ='A';
+            }else if(Percent<=79 && Percent>=60){
+                grade = 'B'; 
+            }else if(Percent<=59 && Percent>=40){
+                grade = 'C';
+            }else{
+                grade='F';
+            }
+            alert(grade);
+            if(Percent>=39.5){
+                 document.getElementById('showmsg').innerHTML=`Out of 400 Total marks is ${totalgrade} and ${Percent}% <br> Grades is ${grade} .you are Pass`
+            }else{
+                document.getElementById('showmsg').innerHTML=`Out of 400 Total marks is ${totalgrade} and ${Percent}% <br> Grades is ${grade} .you are Fail` 
+            }
+            }
+            </script>
+</body>
+</html>

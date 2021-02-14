@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:burlywood ;
+}
+#container{
+   width:350px;
+   margin: auto;
+   background-color: cornflowerblue;
+   padding: 3px;
+   margin-top: 20%;
+   box-sizing: content-box;
+}
+  form{
+      padding: 1px;
+      font-family: Arial, Helvetica, sans-serif;
+      border:2px dotted white;
+      
+  }
+  h3{
+      text-align: center;
+      font-size: 30px;      color: red;
+  }
+  .box1{
+    text-align:center;
+  }
+  .box{
+      text-align:center;
+      background-color: wheat;
+      border: 2px solid wheat;
+      border-radius: 6px;
+      
+  }
+  .press{
+    text-align:center;
+      background-color:yellowgreen;
+      border: 2px solid black;
+      border-radius: 6px;
+      
+  }
+  #showmsg{
+      color:black;
+      text-align:center;
+  }

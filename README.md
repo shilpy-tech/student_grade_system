@@ -1,2 +1,1 @@
-# student_grade_system
-fgg
+# student_grade_syst
